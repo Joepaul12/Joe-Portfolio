@@ -1,0 +1,1314 @@
+/* ====================================================
+  Template Name: evos html template (clone by azijul)
+  Template URI: http://www.dreamroadtech.com/templates/evos-preview/index.html
+  Description: evos html template (Clone by Azijul for practice Purpose)
+
+  Author: HM Azijul
+  Author URI: http://www.hmazijul.com
+  version: 1.0
+==================================================== */
+
+/* CSS Index
+------------------------------------
+01. template default css
+02. section default css
+03. header css
+04. home css
+05. author basic info css
+06. about-me css 
+07. skill css
+08. qualification css
+09. portfolio css
+10. service css
+11. team css
+12. testimonial css
+13. contact css
+14. sponsor css
+15. blog css
+16. footer css 
+
+
+
+*/
+
+/* ====================================================
+  Google Fonts
+==================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik:wght@400;500&display=swap');
+
+
+/* ..................................
+ 01. template default css 
+.................................. */
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lilita One', cursive;
+}
+
+p {
+  line-height: 25px;
+  color: #9498a9;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+
+/* ====================================================
+   Author's custom styles
+   ==================================================== */
+
+/*...................................
+    02. section default css
+................................... */
+
+.section-padding {
+  padding: 120px 0;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title p {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #6928d9;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.section-title h3 {
+  font-size: 50px;
+  /* line-height: 60px; */
+  text-transform: capitalize;
+  color: #060630;
+}
+
+.sec-title-mr-btm {
+  margin-bottom: 80px;
+}
+
+.sec-border-btm {
+  border-bottom: 2px solid #dfdfdf;
+}
+
+.section-btn {
+  height: 60px;
+  width: 200px;
+  background-color: #6928d9;
+  border: 2px solid #6928d9;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 15px 15px 0 0;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.section-btn:hover {
+  background: transparent;
+  border: 2px solid #44ebff;
+  transition: .3s;
+  color: #060630;
+}
+
+.section-btn.active {
+  background: transparent;
+  border: 2px solid #44ebff;
+  transition: .3s;
+  color: #060630;
+}
+
+
+/*...................................
+    03. header css
+................................... */
+header {
+  background: transparent;
+  padding: 3% 6%;
+}
+
+/* sticky header css start */
+header.neel {
+  background-color: #6928d9;
+  opacity: .9;
+  transition: .5s;
+  padding: 10px 100px;
+  z-index: 11;
+  cursor: pointer;
+}
+
+header.neel .humberg-icon img {
+  width: 75%;
+  padding-top: 7px;
+}
+
+header.neel .logo a {
+  font-size: 40px;
+}
+
+/* sticky header css end */
+
+.logo a {
+  font-family: 'Lilita One', cursive;
+  font-size: 50px;
+  color: #fff;
+  line-height: 50px;
+}
+
+.humberg-icon {
+  float: right;
+  cursor: pointer;
+  z-index: -1;
+}
+
+/* header - offcanvas menu css */
+.offcanvas-menu {
+  width: 350px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  padding: 40px;
+  background: linear-gradient(to bottom right, #00ffa2 -15%, #8833fe 72%);
+  overflow-y: scroll;
+  transition: .5s;
+  margin-right: -350px;
+}
+
+.offcanvas-menu.active {
+  margin-right: 0;
+  transition: .5s;
+  z-index: 99999;
+}
+
+.offcanvas-menu-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+  opacity: .6;
+  display: none;
+}
+
+.offcanvas-menu-overlay.active {
+  display: block;
+  cursor: pointer;
+}
+
+.menu-close i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.offcanvas-image {
+  border: 5px solid #BAFF26;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.offcanvas-menu h3 {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.offcanvas-menu p {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.offcanvas-menu ul li {
+  display: block;
+  text-align: right;
+  padding-right: 70px;
+  padding-bottom: 8px;
+}
+
+.offcanvas-menu ul li a {
+  font-size: 18px;
+  color: #fff;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.offcanvas-menu ul li a:hover {
+  color: #BAFF26;
+  transform: .5s;
+}
+
+.offcanvas-menu ul li a i {
+  padding-left: 10px;
+  font-size: 20px;
+  color: #BAFF26;
+  transition: .5s;
+}
+
+.offcanvas-menu ul li a:hover i {
+  padding-left: 30px;
+  transition: .5s;
+}
+
+.offcanvas-menu-social {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.offcanvas-menu-social a i {
+  background-color: #BAFF26;
+  color: #8833fe;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+  margin: 3px;
+  transition: .5s;
+}
+
+.offcanvas-menu-social a i:hover {
+  background-color: transparent;
+  color: #BAFF26;
+  border: 2px solid #BAFF26;
+  transition: .5s;
+}
+
+/* ..................................
+ 04. home css 
+.................................. */
+.home {
+  background-image: url(../img/home_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #6928d9;
+  height: 100vh;
+  /* vh= visual height */
+  padding: 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-content {
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.home-content p {
+  font-size: 26px;
+  color: #fff;
+}
+
+.home-content p span {
+  border-bottom: 2px solid;
+  padding: 5px;
+}
+
+.home-content h1 {
+  font-size: 70px;
+  color: #fff;
+}
+
+.author-img {
+  right: 0;
+  bottom: 0;
+  position: relative;
+  height: 100%;
+}
+
+.author-img img {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+/* home shape css */
+#home .shape-01 {
+  left: 33% !important;
+  top: 4% !important;
+  width: 110px;
+}
+
+#home .shape-02 {
+  left: -5% !important;
+  top: 40% !important;
+  width: 80px;
+}
+
+#home .shape-03 {
+  left: 10% !important;
+  top: 75% !important;
+  width: 80px;
+}
+
+#home .shape-04 {
+  left: 88% !important;
+  top: 40% !important;
+  width: 110px;
+}
+
+/* ..................................
+ 05. author basic info css 
+.................................. */
+.author-info-icon {
+  font-size: 30px;
+  background-color: #6928d9;
+  color: #fff;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.author-info-icon:before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  height: 80px;
+  width: 80px;
+  background-color: #f4edff;
+  z-index: -1;
+}
+
+.author-info span {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #9498a9;
+  font-weight: 500;
+  display: inline-block;
+  padding: 15px 0 10px 0;
+}
+
+.author-info h5 {
+  font-size: 24px;
+  color: #060630;
+}
+
+/* ..................................
+ 06. about-me css 
+.................................. */
+.about-left {
+  padding: 0 20px 0 0px;
+}
+
+.about-left img {
+  box-shadow: 6px 42px 68px 8px rgba(6, 6, 48, 0.35);
+}
+
+.about-right {
+  padding: 20px;
+}
+
+.about-right .section-title {
+  text-align: left;
+}
+
+.about-right .section-title p {
+  color: #9498a9;
+}
+
+.about-right span {
+  font-size: 18px;
+  color: #6928d9;
+  padding: 10px 0 20px 0;
+  display: inline-block;
+}
+
+/* about section shape css start */
+#about {
+  position: relative;
+  overflow-x: hidden;
+}
+
+#about .shape-01 {
+  left: 75% !important;
+  top: -8% !important;
+  width: 150px;
+}
+
+#about .shape-02 {
+  left: -5% !important;
+  top: 55% !important;
+}
+
+#about .shape-03 {
+  left: unset !important;
+  top: unset !important;
+  right: -3% !important;
+  bottom: 5% !important;
+}
+
+/* hover3d - 01 */
+#about .about-hover3d-01 {
+  position: absolute;
+  right: 0%;
+  top: 9%;
+}
+
+/* about section shape css end */
+/* ..................................
+ 07. skill css 
+.................................. */
+.skill {
+  background-color: #060630;
+}
+
+#skill .section-title {
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.skill .section-title p {
+  color: #00ffa2;
+}
+
+.skill .section-title h3 {
+  color: #fff;
+}
+
+/* hover3d - 02 */
+#skill .skill-hover3d-02 {
+  position: absolute;
+  left: 26%;
+  bottom: -8%;
+}
+
+/* skill (progressbar) column */
+.single-progress {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.single-progress .percentage {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 50px;
+  font-family: 'Lilita One', cursive;
+}
+
+.single-progress p {
+  position: absolute;
+  top: 56%;
+  left: 0;
+  width: 100%;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* education column */
+.edu-year {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.edu-year h5 {
+  font-size: 30px;
+}
+
+.edu-graduation h5 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.edu-year p,
+.edu-graduation p {
+  color: #aaaabf;
+}
+
+.edu-year-item {
+  padding-bottom: 55px;
+}
+
+.edu-year-item-1 {
+  color: #1573ff;
+}
+
+.edu-year-item-2 {
+  color: #16ffdb;
+}
+
+.edu-year-item-3 {
+  color: #baff26;
+}
+
+.edu-graduation {
+  color: #fff;
+  position: relative;
+  padding-left: 50px;
+}
+
+/* middle line css */
+.edu-graduation:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: #20205f;
+}
+
+.edu-graduation-item-1,
+.edu-graduation-item-2,
+.edu-graduation-item-3 {
+  position: relative;
+}
+
+/* blue color dot css */
+.edu-graduation-item-1:before,
+.edu-graduation-item-2:before,
+.edu-graduation-item-3:before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -58px;
+  background: #1573ff;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.edu-graduation-item-1:after,
+.edu-graduation-item-2:after,
+.edu-graduation-item-3:after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: -53px;
+  background: #fff;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* pest color dot css */
+.edu-graduation-item-2:before {
+  background: #00ffa2;
+}
+
+.edu-graduation-item-2:after {
+  background: #fff;
+}
+
+/* holud color dot css */
+.edu-graduation-item-3:before {
+  background: #baff26;
+}
+
+.edu-graduation-item-3:after {
+  background: #fff;
+}
+
+/* nicer +sign css */
+.edu-graduation:after {
+  position: absolute;
+  content: "+";
+  bottom: 0;
+  left: -13px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  background: #1573ff;
+  color: #fff;
+  line-height: 30px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ..................................
+ 08. qualification css 
+.................................. */
+.qualification-item {
+  background-color: #f7f7f7;
+  padding: 50px 60px;
+  position: relative;
+  transition: .8s;
+}
+
+.qualification-item.active:before,
+.qualification-item:hover:before {
+  position: absolute;
+  content: "";
+  top: -8px;
+  left: -8px;
+  height: 70px;
+  width: 70px;
+  border-top: 8px solid #16ffdb;
+  border-left: 8px solid #16ffdb;
+  transition: .8s;
+}
+
+.qualification-item.active:after,
+.qualification-item:hover:after {
+  position: absolute;
+  content: "";
+  bottom: -8px;
+  right: -8px;
+  height: 70px;
+  width: 70px;
+  border-bottom: 8px solid #1573ff;
+  border-right: 8px solid #1573ff;
+  transition: .8s;
+}
+
+.qualification-icon {
+  font-size: 30px;
+  background-color: #fff;
+  color: #6928d9;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+  box-shadow: 0px 23px 90px -16px rgba(105, 40, 217, 0.5);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.qualification-icon:before {
+  position: absolute;
+  content: "";
+  left: 14px;
+  top: -4px;
+  height: 8px;
+  width: 8px;
+  background-color: #16ffdb;
+}
+
+.qualification-icon:after {
+  position: absolute;
+  content: "";
+  right: -3px;
+  bottom: 14px;
+  height: 8px;
+  width: 8px;
+  background-color: #baff26;
+}
+
+.qualification-item h4 {
+  font-size: 30px;
+  color: #060630;
+  text-transform: capitalize;
+}
+
+.qualification-item span {
+  font-size: 17px;
+  color: #9498a9;
+  padding: 16px 0;
+  display: inline-block;
+}
+
+/* hover3d - 03 */
+#qualification .quali-hover3d-03a {
+  position: absolute;
+  right: 4%;
+  bottom: 30%;
+}
+
+#qualification .quali-hover3d-03b {
+  position: absolute;
+  left: 7%;
+  bottom: -6%;
+}
+
+/* ..................................
+ 09. portfolio css
+.................................. */
+#portfolio {
+  background-color: #f6f6f6;
+}
+
+.portfolio-wrap {
+  margin-bottom: 30px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.portfolio-wrap a {
+  transition: 0.5s;
+}
+
+.portfolio-wrap a:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #6928d9;
+  transition: 0.5s;
+  color: #fff;
+  text-align: left;
+  font-size: 45px;
+  padding-top: 27%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.portfolio-wrap a:hover:before {
+  opacity: .7;
+  transition: 0.5s;
+  border: 15px solid #00ffa2;
+  visibility: visible;
+}
+
+.portfolio-hover {
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.portfolio-wrap:hover .portfolio-hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+
+.portfolio-hover span {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  word-spacing: 4px;
+  position: relative;
+  letter-spacing: 1px;
+  display: block;
+  transition: 0.5s;
+}
+
+.portfolio-hover p {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+  color: #fff;
+  transition: .5s;
+}
+
+.portfolio-wrap img {
+  height: 250px;
+  width: 100%;
+}
+
+.portfolio-big img {
+  height: 530px;
+}
+
+.portfolio-menu {
+  margin-bottom: 45px;
+}
+
+.portfolio-menu li {
+  display: inline-block;
+  margin: 5px 10px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-bottom: 2px solid #e8eaf6;
+  color: #9498a9;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.portfolio-menu li:hover {
+  color: #6928d9;
+  border-bottom: 2px solid #6928d9;
+  transition: 0.5s;
+}
+
+.portfolio-menu .active {
+  color: #6928d9;
+  border-bottom: 2px solid #6928d9
+}
+
+
+/* ..................................
+ 10. service css 
+.................................. */
+#service {
+  background-color: #060630;
+}
+
+#service .section-title {
+  text-align: left;
+}
+
+#service .section-title p {
+  color: #baff26;
+}
+
+#service .section-title h3 {
+  color: #fff;
+}
+
+#service .section-btn {
+  float: right;
+  color: #fff;
+}
+
+.service-item {
+  margin: 30px 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.service-item h4 {
+  font-size: 34px;
+  color: #fff;
+  padding: 20px 0 10px 0;
+  text-transform: capitalize;
+}
+
+
+/* ..................................
+ 11. team css 
+.................................. */
+#team {
+  background-image: url(../img/team/team-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.team-member {
+  background-color: #6928d9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  transition: .5s;
+}
+
+.team-member-1 {
+  background-image: url(../img/team/01.png);
+}
+
+.team-member-2 {
+  background-image: url(../img/team/02.png);
+}
+
+.team-member-3 {
+  background-image: url(../img/team/03.png);
+}
+
+.team-memeber-wrap h4 {
+  font-size: 34px;
+  color: #060630;
+  text-transform: capitalize;
+  padding: 55px 0 0 35px;
+}
+
+.team-memeber-wrap span {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #6928d9;
+  padding: 35px 0 0 35px;
+}
+
+.team-social {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  transition: .5s;
+  opacity: 0;
+}
+
+.team-social.active {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  transition: .5s;
+  opacity: 1;
+}
+
+.team-member:hover .team-social {
+  bottom: -20px;
+  transition: .5s;
+  opacity: 1;
+}
+
+.team-social a {
+  font-size: 14px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  color: #9498a9;
+  background-color: #fff;
+  margin: 0 4px;
+  transition: .5s;
+}
+
+.team-social a:hover {
+  background-color: #6928d9;
+  color: #fff;
+  transition: .5s;
+
+}
+
+.team-social a.active {
+  background-color: #6928d9;
+  color: #fff;
+}
+
+
+/* ..................................
+ 12. testimonial css 
+.................................. */
+.testimonial {
+  background-color: #6928d9;
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+}
+
+.testimonial:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/testimonial/testimonial_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.testimonial-right {
+  padding: 100px 0 50px 30px;
+}
+
+.testimonial .review {
+  width: 100%;
+}
+
+.testimonial .review .review-star {
+  color: #fff000;
+  float: left;
+  font-size: 16px;
+}
+
+.testimonial .review .review-text {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  float: right;
+}
+
+.testimonial-right h4 {
+  font-size: 30px;
+  display: inline-block;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.testimonial-right p {
+  color: #fff;
+}
+
+.testimonial-author {
+  display: table;
+}
+
+.testimonial-author img {
+  padding-top: 22px;
+}
+
+.testimonial-author h5 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.testimonial-author span {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #eaff00;
+}
+
+.testimonial-author .content {
+  display: table-cell;
+  padding-left: 20px;
+}
+
+
+/* ..................................
+ 13. contact css 
+.................................. */
+
+.form-asset {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-asset i {
+  position: absolute;
+  color: #6928d9;
+  font-size: 13px;
+  top: 23px;
+  left: 23px;
+}
+
+.form-asset input {
+  height: 60px;
+}
+
+.form-asset input::placeholder,
+.form-asset textarea::placeholder {
+  color: #bebeca;
+}
+
+.form-asset textarea {
+  padding-top: 20px;
+}
+
+.form-asset input,
+.form-asset textarea {
+  font-size: 12px;
+  padding-left: 53px;
+  border: 2px solid #eae8ff;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.contact .section-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+/* hover3d - 04 */
+#contact .contact-hover3d-04a {
+  position: absolute;
+  left: 5%;
+  bottom: 4%;
+}
+
+#contact .contact-hover3d-04b {
+  position: absolute;
+  right: 7%;
+  top: 2%;
+}
+
+/* ..................................
+ 14. sponsor css 
+.................................. */
+
+.sponsor-item a img {
+  filter: opacity(0.25);
+  transition: 0.2s;
+}
+
+.sponsor-item a img.active {
+  filter: opacity(1);
+}
+
+.sponsor-item a img:hover {
+  filter: opacity(1);
+}
+
+
+/* ..................................
+ 15. blog css 
+.................................. */
+.blog-item {
+  padding: 30px 15px 0 15px;
+}
+
+.blog-comment {
+  font-size: 15px;
+  color: #9498a9;
+}
+
+.blog-comment i {
+  padding-right: 5px;
+}
+
+.blog-comment .name {
+  float: left;
+}
+
+.blog-comment .comment {
+  float: right;
+}
+
+.blog-item h4 {
+  font-size: 26px;
+  color: #060630;
+  padding: 15px 0;
+  display: inline-block;
+}
+
+.blog-item p {
+  margin-bottom: 5px;
+}
+
+/* hover3d - 05 */
+#blog .blog-hover3d-05 {
+  position: absolute;
+  right: 5%;
+  top: 4%;
+}
+
+#blog .blog-hover3d-05 img {
+  width: 130px;
+}
+
+/* ..................................
+ 16. footer css 
+.................................. */
+.footer-top {
+  background-color: #6928d9;
+  padding: 40px 0;
+}
+
+.footer-top ul li a {
+  color: #fff;
+  padding: 0 15px;
+  text-transform: capitalize;
+  margin-top: 13px;
+  display: inline-block;
+}
+
+.footer-bottom {
+  background-color: #5c20c3;
+  padding: 40px 0;
+}
+
+.footer-social ul li {
+  padding: 15px 20px;
+  border: 2px solid #8d63d5;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.footer-social ul li a {
+  color: #fff;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social ul li:last-child a i {
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.footer-bottom-left {
+  padding-top: 15px;
+}
+
+.footer-bottom-left p {
+  font-size: 15px;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.footer-bottom-right h4 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.footer-bottom-right input {
+  height: 60px;
+  padding: 0 50px;
+  text-transform: lowercase;
+}
+
+.footer-bottom-right i {
+  padding-right: 10px;
+}
+
+.footer-bottom-right form .section-btn {
+  color: #fff;
+}

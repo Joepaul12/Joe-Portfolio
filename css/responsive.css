@@ -1,0 +1,66 @@
+
+@media (min-width:1881px) {
+    .home {
+        padding: 0 10%;
+    }
+
+    .home-content p {
+        font-size: 36px;
+    }
+
+    .home-content h1 {
+        font-size: 95px;
+    }
+
+
+
+}
+
+@media (min-width: 1400px) and (max-width: 1880px) {
+    .home {
+        padding: 0 8%;
+    }
+
+    .home-content h1 {
+        font-size: 70px;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .home-content h1 {
+        font-size: 63px;
+        color: #fff;
+    }
+}
+
+/* lg device */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home {
+        height: 80vh;
+    }
+
+    .author-img,
+    .home-content h1 br {
+        display: none;
+    }
+
+    #about .about-hover3d-01 {
+        right: -14%;
+        top: 4%;
+    }
+    .section-btn{
+        margin-right: 5px;
+    }
+}
+
+
+/* md device */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+/* sm device */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
